@@ -76,9 +76,9 @@ A API utilizada foi a https://randomuser.me/ que fornece informações de usuár
 
 ## Funcionalidades
 
-- [ X ] Filtro de usuários pelo gênero
-- [ X ] Filtro de usuários pela nacionalidade
-- [ X ] Filtro de usuários pela quantidade
+- [X] Filtro de usuários pelo gênero
+- [X] Filtro de usuários pela nacionalidade
+- [X] Filtro de usuários pela quantidade
 - [ ] Mostrar mais informações dos usuários
     [ ] País
     [ ] Estado
