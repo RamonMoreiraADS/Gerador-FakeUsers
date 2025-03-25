@@ -1,5 +1,9 @@
 async function generateFakerUsers(){
     var qt = document.querySelector("#quantUsers").value;
+    if(qt > 5000){
+        qt = 5000
+        alert("A quantidade máxima é de 5000!")
+    }
     var nat = document.querySelector("#natUsers").value;
     var inputsGender = document.getElementsByTagName("input");
     var gender = "";
@@ -26,12 +30,13 @@ async function generateFakerUsers(){
         <div class="info">
           <span><b>Nome:</b> ${user.name.first + " " + user.name.last}</span>
           <span><b>Email:</b> ${user.email}</span>
-          <span><b>Data:</b> ${new Date(user.dob.date).toLocaleDateString()}</span>
+          <span><b>Nascimento:</b> ${new Date(user.dob.date).toLocaleDateString()}</span>
+          <span><b>País:</b> ${user.location.country}</span>
+          <span><b>Estado:</b> ${user.location.state}</span>
+          <span><b>Cidade:</b> ${user.location.city}</span>
+          <span><b>Telefone:</b> ${user.phone}</span>
           </div>`;//pega as informações do json e coloca no card que está sendo criado
           
           document.querySelector(".allUsers").appendChild(userDiv);
-        
     }
-    
 }
-
