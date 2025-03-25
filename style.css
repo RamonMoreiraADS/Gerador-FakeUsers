@@ -1,8 +1,13 @@
 h1 {
-    text-align: center;
-    color: rgb(54, 54, 130);
+  font-size: 36px;
+  background-color:darkseagreen;
+  border-radius: 10px; 
+  text-align: center;
+  color: rgb(54, 54, 130);
+  padding-top: 10px;
+  padding-bottom: 10px;
   }
-  
+ 
   .formUser {
     display: flex;
     justify-content: center;
@@ -28,7 +33,7 @@ h1 {
     padding: 15px;
     gap: 10px;
     width: 250px;
-    height: 180px;
+    height: 280px;
   }
   
   .user img {
